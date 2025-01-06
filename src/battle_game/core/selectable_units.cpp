@@ -1,5 +1,5 @@
 #include "battle_game/core/game_core.h"
-
+#include "battle_game/core/units/shiki.h" 
 namespace battle_game {
 
 template <class UnitType, class... Args>
@@ -22,7 +22,7 @@ void GameCore::GeneratePrimaryUnitList() {
    * TODO: Add Your Unit Here!
    * */
   ADD_SELECTABLE_UNIT(unit::Tank);
-
+  ADD_SELECTABLE_UNIT(unit::ShikiTank);
   unit.reset();
 }
 }  // namespace battle_game
